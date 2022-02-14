@@ -1,0 +1,61 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #000;
+}
+    
+a{
+    color: chartreuse;
+}
+
+<.grid_container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: 'header''footer'
+    
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: 'img''nav''contact';
+    grid-area: header;
+    background: dimgray;
+   
+    }
+.img-container {
+    display:grid;
+    grid-area:img;
+}
+.nav-container {
+    grid-area:nav;
+    align-items: center;
+    justify-content:space-between;
+    background: dimgray; 
+    font-weight:lighter;
+    font-size: xx-large;
+    color: chartreuse; 
+    }
+.contact-container{
+        grid-area: contact;
+        align-items: flex-end;
+        justify-content:space-around;
+        background: dimgray; 
+        font-weight:lighter;
+        color: chartreuse; 
+        }
+
+.main_container{
+    justify-content:space-around;
+
+}
+.footer-container{
+    display: grid;
+    grid-area: footer;
+    background: dimgray;
+    align-content:space-around;
+    font-weight: lighter;
+    font-size:xx-large;
+    color: chartreuse;
+   
+    }
